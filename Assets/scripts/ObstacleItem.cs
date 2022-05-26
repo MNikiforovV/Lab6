@@ -7,7 +7,7 @@ public class ObstacleItem : MonoBehaviour
 {
     private float currentValue;
 
-    private UnityEvent onDestroyObstacle;
+    public UnityEvent onDestroyObstacle;
 
     private UnityAction destroy;
     void Start()
@@ -25,7 +25,7 @@ public class ObstacleItem : MonoBehaviour
         }
     }
 
-    private void GetDamage(float value)
+    public void GetDamage(float value)
     {
         currentValue = currentValue - value;
     }
